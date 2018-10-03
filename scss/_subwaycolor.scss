@@ -1,0 +1,45 @@
+.subway-badge {
+	display:inline-block;
+	color:#fff;
+	border-radius:20px;
+	padding:0 7px;
+	height:20px;
+	font-size:12px;
+	line-height:20px;
+	vertical-align: middle;
+	text-align:center;
+}
+.sudoline-color-01{&:before{content:"1";} width:20px; padding:0; background-color: $sudoline-color-01}
+.sudoline-color-02{&:before{content:"2";} width:20px; padding:0; background-color: $sudoline-color-02}
+.sudoline-color-03{&:before{content:"3";} width:20px; padding:0; background-color: $sudoline-color-03}
+.sudoline-color-04{&:before{content:"4";} width:20px; padding:0; background-color: $sudoline-color-04}
+.sudoline-color-05{&:before{content:"5";} width:20px; padding:0; background-color: $sudoline-color-05}
+.sudoline-color-06{&:before{content:"6";} width:20px; padding:0; background-color: $sudoline-color-06}
+.sudoline-color-07{&:before{content:"7";} width:20px; padding:0; background-color: $sudoline-color-07}
+.sudoline-color-08{&:before{content:"8";} width:20px; padding:0; background-color: $sudoline-color-08}
+.sudoline-color-09{&:before{content:"9";} width:20px; padding:0; background-color: $sudoline-color-09}
+.sudoline-color-incheon01{&:before{content:"인천1";}  background-color: $sudoline-color-incheon01}
+.sudoline-color-incheon02{&:before{content:"인천2";}  background-color: $sudoline-color-incheon02}
+.sudoline-color-bundang{&:before{content:"분당";}  background-color: $sudoline-color-bundang}
+.sudoline-color-sinbundang{&:before{content:"신분당";}  background-color: $sudoline-color-sinbundang}
+.sudoline-color-gyeongui{&:before{content:"경의중앙";}  background-color: $sudoline-color-gyeongui}
+.sudoline-color-gyeongchun{&:before{content:"경춘";}  background-color: $sudoline-color-gyeongchun}
+.sudoline-color-airline{&:before{content:"공항";}  background-color: $sudoline-color-airline}
+.sudoline-color-uijeongbu{&:before{content:"의정부";}  background-color: $sudoline-color-uijeongbu}
+.sudoline-color-sooin{&:before{content:"수인";}  background-color: $sudoline-color-sooin}
+.sudoline-color-everline{&:before{content:"에버라인";}  background-color: $sudoline-color-everline}
+.sudoline-color-jagibusang{&:before{content:"자기부상";}  background-color: $sudoline-color-jagibusang}
+.sudoline-color-gyeonggang{&:before{content:"경강";}  background-color: $sudoline-color-gyeonggang}
+.sudoline-color-uinewline{&:before{content:"우이신설";}  background-color: $sudoline-color-uinewline}
+.sudoline-color-westsea{&:before{content:"서해";}  background-color: $sudoline-color-westsea}
+.busan-color-01{&:before{content:"부산1";} background-color: $busan-color-01}
+.busan-color-02{&:before{content:"부산2";} background-color: $busan-color-02}
+.busan-color-03{&:before{content:"부산3";} background-color: $busan-color-03}
+.busan-color-04{&:before{content:"부산4";} background-color: $busan-color-04}
+.busan-color-eastsea{&:before{content:"동해";} background-color: $busan-color-eastsea}
+.busan-color-gyeongjeon{&:before{content:"부산김해";} background-color: $busan-color-gyeongjeon}
+.daegu-color-01{&:before{content:"대구1";} background-color: $daegu-color-01}
+.daegu-color-02{&:before{content:"대구2";} background-color: $daegu-color-02}
+.daegu-color-03{&:before{content:"대구3";} background-color: $daegu-color-03}
+.gwangju-color-01{&:before{content:"광주1";} background-color: $gwangju-color-01}
+.daejeon-color-01{&:before{content:"광주1";} background-color: $daejeon-color-01}

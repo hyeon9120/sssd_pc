@@ -1,0 +1,13 @@
+@media (max-device-width: 350px) {
+	.max320 {
+		display:block;
+	}
+	.max320_hide {
+		display:none;
+	}
+	.footer {
+		.footer-text {
+			font-size:8px !important;
+		}
+	}
+}

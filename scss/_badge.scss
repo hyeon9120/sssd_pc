@@ -1,0 +1,41 @@
+.badge-box {
+	padding:0 10px 20px;
+}
+span.badge {
+	display:inline-block;
+	margin:0 -1px;
+	background-color:#aaa;
+	color:#fff;
+	padding:4px;
+	font-size:11px;
+	line-height:12px;
+	&.badge-default {
+		color:#a6a6ac;
+		border:1px solid #a6a6ac;
+		background-color:#fff;
+	}
+	&.badge-primary {
+		background-color:$primary-color;
+	}
+	&.badge-blue {
+		background-color:$blue-color;
+	}
+	&.badge-pink {
+		background-color:$pink-color;
+	}
+	&.badge-white {
+		color:#fff;
+		border:1px solid #fff;
+		background-color:transparent;
+	}
+}
+.badge-lg {
+	padding:10px 14px !important;
+	border-radius:3px;
+	font-size:11px;
+	margin:4px 1px;
+}
+.badge-title {
+	vertical-align: middle;
+	margin:-1px 0 0 6px !important;
+}

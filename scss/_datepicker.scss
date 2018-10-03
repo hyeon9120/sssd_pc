@@ -1,0 +1,48 @@
+.datepicker {
+	.today {
+	}
+}
+.datepicker-inline {
+	width:auto !important;
+}
+.datepicker-switch {
+	font-weight:bold !important;
+}
+.datepicker.datepicker-inline th {
+	width:36px;
+	height:36px;
+}
+.datepicker.datepicker-inline td {
+	border-radius:50%;
+	width:36px;
+	height:36px;
+	font-size:16px;
+	margin:5px;
+}
+.datepicker-header {
+	div {
+		display:inline-block;
+		
+	}
+}
+.datepicker table {
+	margin:0 auto !important;
+	border-spacing: 5px;
+	border-collapse: separate;
+}
+.datepicker .next:before {
+	background-image:url(../image/icon_arrow_right.png);
+	width:9px;
+	height:14px;
+	display:block;
+	content:"";
+	margin:0 auto;
+}
+.datepicker .prev:before {
+	background-image:url(../image/icon_arrow_left.png);
+	width:9px;
+	height:14px;
+	display:block;
+	content:"";
+	margin:0 auto;
+}

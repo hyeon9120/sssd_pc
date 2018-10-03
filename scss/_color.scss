@@ -1,0 +1,60 @@
+$border-color: #f0f3f8;
+$primary-gradient: linear-gradient(-135deg, #FF5862 0%, #FF8473 100%);
+$primary-color: #FF5862;
+$orange-color: #FF8473;
+$pink-color: #F68AE1;
+$violet-color: #BD8CFB;
+$yellow-color: #FFC850;
+$green-color: #73DBC6;
+$blue-color: #6A82EC;
+$black-color: #212121;
+$gray-color: #B2BCC8;
+$gray2-color: #96969d;
+$white-color: #FFF;
+$sudoline-color-01: #203B9C;
+$sudoline-color-02: #13B837;
+$sudoline-color-03: #F78C23;
+$sudoline-color-04: #3CBBFE;
+$sudoline-color-05: #A05EED;
+$sudoline-color-06: #D1743D;
+$sudoline-color-07: #667300;
+$sudoline-color-08: #FA3984;
+$sudoline-color-09: #D5A30F;
+$sudoline-color-incheon01: #6399D4;
+$sudoline-color-incheon02: #FEB531;
+$sudoline-color-bundang: #EECA36;
+$sudoline-color-sinbundang: #B7324D;
+$sudoline-color-gyeongui: #62C6A3;
+$sudoline-color-gyeongchun: #11AA7A;
+$sudoline-color-airline: #54A6D5;
+$sudoline-color-uijeongbu: #FE9800;
+$sudoline-color-sooin: #EDDB28;
+$sudoline-color-everline: #7BC16C;
+$sudoline-color-jagibusang: #E27928;
+$sudoline-color-gyeonggang: #4087E3;
+$sudoline-color-uinewline: #c4c100;
+$sudoline-color-westsea: #90c532;
+$busan-color-01: #FE6800;
+$busan-color-02: #13B837;
+$busan-color-03: #D5A30F;
+$busan-color-04: #6399D4;
+$busan-color-eastsea: #9BC4E6;
+$busan-color-gyeongjeon: #A05EED;
+$daegu-color-01: #FE6800;
+$daegu-color-02: #13B837;
+$daegu-color-03: #EECA36;
+$gwangju-color-01: #13B837;
+$daejeon-color-01: #13B837;
+
+$colormounts: (primary,orange,pink,violet,yellow,green,blue,gray,gray2,w);
+$colorvalue: ($primary-color,$orange-color,$pink-color,$violet-color,$yellow-color,$green-color,$blue-color,$gray-color,$gray2-color,$white-color);
+@mixin color-made($var,$type) {
+	@each $color in $colormounts {
+		$i: index($colormounts,$color);
+		.#{$var}-#{$color} {
+			#{$type}:nth($colorvalue, $i) !important;
+		}
+	}
+}
+@include color-made(text,color);
+@include color-made(bg,background-color);

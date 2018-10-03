@@ -1,0 +1,277 @@
+@import "color";
+
+@mixin btn_img($width,$height,$url) {
+	width:$width; 
+	height:$height;
+	background-size:$width $height;
+	background-repeat:no-repeat;
+	background-image:url($url);
+}
+
+* {
+	box-sizing:border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*:focus {
+    outline: none;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {	
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.05em;
+}
+
+fieldset,
+img {
+	border: 0 none
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+	list-style: none
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none
+}
+
+input,
+select,
+textarea,
+button {
+	font-size: 100%;
+	vertical-align: middle
+}
+
+button {
+	border: 0 none;
+	background-color: transparent;
+	cursor: pointer
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+body {
+	-webkit-text-size-adjust: none
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+input[type='search'] {
+	-webkit-appearance: none;
+	border-radius: 0
+}
+
+input:checked[type='checkbox'] {
+	background-color: #666;
+	-webkit-appearance: checkbox
+}
+
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+input[type='file'] {
+	-webkit-appearance: button;
+	border-radius: 0
+}
+
+input[type='search']::-webkit-search-cancel-button {
+	-webkit-appearance: none
+}
+
+img {
+	vertical-align: top
+}
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,'Malgun Gothic','맑은 고딕',sans-serif;
+	color: #212121
+}
+::-webkit-input-placeholder {
+	color: #d4d9e0
+}
+
+::-moz-placeholder {
+	color: #d4d9e0
+}
+
+:-ms-input-placeholder {
+	color: #d4d9e0
+}
+
+:-moz-placeholder {
+	color: #d4d9e0
+}
+a {
+	color: #212121;
+	text-decoration: none
+}
+
+a:active {
+	opacity:0.6;
+	text-decoration: none;
+	//background-color:rgba(0,0,0,0.05);	
+}
+.disabled {
+	cursor:not-allowed;
+	opacity:0.4;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+	font-style: normal;
+	font-weight: normal
+}
+%bg-grey {
+	background:#ebebeb;
+	border-radius:5px;
+}
+%ir-pm {
+	display:block;
+	text-indent:-3000em;
+	overflow:hidden;
+}
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.clearfix {
+	@extend %clearfix;
+}
+.f-left {
+	float:left;
+}
+.f-right {
+	float:right;
+}
+.bold {
+	font-weight:bold;
+}
+.bg-white {
+	background-color:#fff;
+}
+.bg-overlay {
+	display:none;
+	background-color:rgba(0,0,0,0.5);
+	position:fixed;
+	z-index:100;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	opacity:0;
+}
+.container {
+	padding-bottom:60px;
+	background-color:#fff;
+}
+.footer {
+	margin-top:-30px;
+	padding:26px 0 70px;
+	background-color:#F1F5FB;
+	.footer-text {
+		text-align:center;
+		font-size:10px;
+		color:#9FAAB7;
+	}
+	.copyright {
+		padding-top:10px;
+	}
+}
+.text-underline {
+	text-decoration: underline;
+}
+h2 {
+	font-size:24px;
+	font-weight:bold;
+}
+h3 {
+	font-size:17px;
+	margin-bottom:10px;
+}
+h3.instagram {
+	background-image:url(../image/icon/title_instagram_24.svg);
+	background-size:20px 20px;
+	background-repeat:no-repeat;
+	background-position:6px 3px;
+	padding-left:34px;
+}
+h4 {
+	font-size:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.fs-10 {
+	font-size:10px
+}
+.fs-11 {
+	font-size:11px
+}
+.fs-12 {
+	font-size:12px
+}
+.fs-13 {
+	font-size:13px
+}
+.fs-14 {
+	font-size:14px
+}
+.fs-15 {
+	font-size:15px
+}
+.fs-16 {
+	font-size:16px
+}
+.fs-18 {
+	font-size:18px
+}
+@import "header";
+@import "gnb";
+@import "main";
+@import "list";
+@import "tab";
+@import "review";
+@import "gallery";
+@import "badge";
+@import "subwaycolor";
+@import "modal";
+@import "sub";
+@import "iphone5";
+@import "datepicker";
+#wrapper {
+	width:1200px;
+	margin:0 auto;
+}

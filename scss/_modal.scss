@@ -1,0 +1,190 @@
+.modal-overlay {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity:0;
+	z-index:1002;
+	background-color:#000;
+	display:none;
+}
+.modal-appdownload {
+	position:fixed;
+	top:48%;
+	left:50%;
+	margin:-190px 0 0 -335px;
+	width:670px;
+	height:380px;
+	z-index:1003;
+	border-radius:15px;
+	background-color:#fff;
+	opacity:0;
+	display:none;
+	.appdownload-text01 {
+		text-align:center;
+		font-size:28px;
+		padding-top:66px;
+		font-weight:bold;
+	}
+	.appdownload-text02 {
+		text-align:center;
+		font-size:16px;
+		color:#888;
+	}
+	.appdownload-close {
+		position:absolute;
+		top:22px;
+		right:15px;
+		a {
+			display:block;
+			text-indent:-3000em;
+			overflow:hidden;
+			width:35px;
+			height:35px;
+			background-image:url(../image/btn_close.png);
+			background-repeat:no-repeat;
+		}
+	}
+	.app-sms-box {
+		overflow:hidden;
+		width:470px;
+		margin:20px auto 0;
+		.app-sms-input {
+			float:left;
+			width:344px;
+			border-radius:5px 0 0 5px;
+			border:1px solid #cbd2db;
+			border-right:0;
+			background:#fff;
+			height:64px;
+			padding:10px 20px;
+			input {
+				border:0 none;
+				width:100%;
+				font-size:16px;
+				font-weight:bold;
+				line-height:44px;
+				height:44px;
+			}
+		}
+		.app-sms-btn {
+			float:left;
+			width:126px;
+			a {
+				display:block;
+				border-radius:0 5px 5px 0;
+				background-color:#ff5862;
+				color:#fff;
+				height:64px;
+				line-height:64px;
+				text-align:center;
+				font-size:16px;
+				&:focus { 
+					opacity:0.8;
+				}
+			}
+		}
+	}
+	.appdownload-btn {
+		width:470px;
+		margin:16px auto 0;
+		overflow:hidden;
+		a {
+			display:block;
+			overflow:hidden;
+			text-indent:-3000em;
+			width:230px;
+			height:70px;
+			float:left;
+			&.googleplay {
+				background-image:url(../image/btn_googleplay_gray.png);
+			}
+			&.appstore {
+				margin-left:10px;
+				background-image:url(../image/btn_appstore_gray.png);
+			}
+		}
+	}
+}
+.modal-image {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -315px 0 0 -580px;
+	width: 1160px;
+	height: 630px;
+	z-index: 1003;
+	background-color: #000;
+	opacity: 0;
+	display: none;
+	.image-container {
+		width: 1160px;
+		height: 100%;
+		overflow: hidden;
+	}
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+	}
+	.swiper-slide img {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+		max-height: 100%;
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+	}
+	.image-pagination {
+		position:absolute;
+		bottom:15px;
+		width:50px;
+		left:50%;
+		margin-left:-25px;
+		background-color:rgba(0,0,0,0.5);
+		color:#fff;
+		padding:5px 0;
+		z-index:1000;
+		text-align:center;
+		border-radius:3px;
+		letter-spacing: -0.1em;
+		font-size:12px;
+		line-height:14px;
+		height:24px;
+		vertical-align: middle;
+	}
+	.image-button-next,
+	.image-button-prev {
+		background-size:60px 60px !important;
+		width:60px !important; 
+		height:60px !important;
+	}
+	.image-button-next {
+		right:-55px !important;
+	}
+	.image-button-prev {
+		left:-55px !important;
+	}
+	.image-close {
+		position:absolute;
+		top:10px;
+		right:10px;
+		z-index:1000;
+		a {
+			display:block;
+			text-indent:-3000em;
+			overflow:hidden;
+			width:40px;
+			height:40px;
+			background-image:url(../image/icon/ic_close.svg);
+			background-size:30px 30px;
+			background-position:center center;
+			background-repeat:no-repeat;
+		}
+	}
+}
