@@ -226,7 +226,7 @@
 								<li>
 									<div class="list-photo">
 										<a href="javascript:;" class="img" style="background-image:url(image/detail_sample01.png);"></a>
-										<div class="list-moreview" onclick="image_show(0)">+9</div> <!-- 6개 이상일경우에만 표시 -->
+										<div class="list-moreview" onclick="image_show()">+9</div> <!-- 6개 이상일경우에만 표시 -->
 									</div>
 								</li>
 							</ul>
@@ -940,22 +940,16 @@
 	<div class="image-container">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<!-- Required swiper-lazy class and image source specified in data-src attribute -->
-				<img data-src="http://placehold.it/1160x630" class="swiper-lazy">
-				<!-- Preloader image -->
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				<div style="background-image:url(http://placehold.it/1160x480)" class="swiper-lazy"></div>
 			</div>
 			<div class="swiper-slide">
-				<img data-src="http://placehold.it/1160x480" class="swiper-lazy">
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				<div style="background-image:url(http://placehold.it/460x1280)" class="swiper-lazy"></div>
 			</div>
 			<div class="swiper-slide">
-				<img data-src="http://placehold.it/800x630" class="swiper-lazy">
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				<div style="background-image:url(http://placehold.it/80x480)" class="swiper-lazy"></div>
 			</div>
 			<div class="swiper-slide">
-				<img data-src="http://placehold.it/1460x280" class="swiper-lazy">
-				<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+				<div style="background-image:url(http://placehold.it/1460x280)" class="swiper-lazy"></div>
 			</div>
 
 		</div>
@@ -1024,6 +1018,8 @@ $('.swip-date a').click(function() {
 	} else {
 		$(this).parent().addClass('open');
 		$(this).parent().next().slideDown();
+		$('.class-time').slideUp();
+		$('.swip-time').removeClass('open');
 	}
 });
 $('.swip-time a').click(function() {
@@ -1033,11 +1029,13 @@ $('.swip-time a').click(function() {
 	} else {
 		$(this).parent().addClass('open');
 		$(this).parent().next().slideDown();
+		$('.class-date').slideUp();
+		$('.swip-date').removeClass('open');
 	}
 });
 var modal_status = "";
 var image_swiper;
-function image_show(img_num) {
+function image_show() {
 	$('.modal-image').show().animate({
 		opacity: "1",
 		duration: 500,
@@ -1047,9 +1045,7 @@ function image_show(img_num) {
 		duration: 500,
 	});
 	modal_status = "image";
-	var image_swiper = new Swiper('.image-container', {
-      // Enable lazy loading
-      lazy: true,
+	image_swiper = new Swiper('.image-container', {
       pagination: {
         el: '.image-pagination',
         type: 'fraction'
@@ -1058,8 +1054,7 @@ function image_show(img_num) {
         nextEl: '.image-button-next',
         prevEl: '.image-button-prev',
       },
-    });
-	image_swiper.slideTo(img_num,0);
+	});
 };
 function image_hide() {
 	$('.modal-image').animate({
@@ -1071,8 +1066,8 @@ function image_hide() {
 		opacity: "0",
 		}, 500, function() {
 			$(this).hide();
+			image_swiper.destroy();
 	});
-	image_swiper.destroy();
 };
 function appdownload_show() {
 	$('.modal-appdownload').show().animate({

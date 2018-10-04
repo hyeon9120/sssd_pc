@@ -802,7 +802,11 @@ h4 {
   font-size: 16px;
   display: block;
   padding: 10px 15px;
-  transition: .3s ease-in-out;
+  transition: .1s ease-in-out;
+}
+.gnb li a:hover,
+.gnb li a:active {
+  color: #ff5862 !important;
 }
 
 #main-banner {
@@ -1126,7 +1130,7 @@ hr.main {
   content: "";
   background: #000;
   position: absolute;
-  bottom: -5px;
+  bottom: -1px;
   left: 0;
   right: 0;
 }
@@ -2044,7 +2048,7 @@ hr.main {
   content: "";
   display: block;
   background-color: #ebebeb;
-  padding-top: 100%;
+  padding-top: 99.9%;
 }
 .list-gallery .list-moreview {
   z-index: 99;
@@ -2098,7 +2102,7 @@ hr.main {
   content: "";
   display: block;
   background-color: #ebebeb;
-  padding-top: 100%;
+  padding-top: 99.9%;
 }
 .review-gallery .list-moreview {
   z-index: 99;
@@ -2171,12 +2175,13 @@ hr.main {
 
 .gallery-5:after {
   position: absolute;
-  right: 4px;
-  bottom: 4px;
-  width: calc(100% / 3 - 8px);
-  height: calc(100% / 3 - 8px);
+  right: 10px;
+  bottom: 10px;
+  width: calc(100% / 3 - 20px);
+  height: calc(100% / 3 - 20px);
   content: "";
   background: #f0f3f5;
+  border-radius: 5px;
 }
 
 .badge-box {
@@ -2625,17 +2630,20 @@ span.badge.badge-white {
   font-size: 18px;
 }
 .modal-image .swiper-slide img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  position: absolute;
-  left: 50%;
+  object-fit: contain;
+  position: relative;
   top: 50%;
+  transform: translateY(-50%);
+}
+.modal-image .swiper-slide .swiper-lazy {
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .modal-image .image-pagination {
   position: absolute;

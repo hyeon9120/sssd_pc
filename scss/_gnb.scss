@@ -23,7 +23,11 @@
 			font-size:16px;
 			display:block;
 			padding:10px 15px;
-			transition:.3s ease-in-out;
+			transition:.1s ease-in-out;
+		}
+		a:hover,
+		a:active {
+			color:#ff5862 !important;
 		}
 	}
 }
