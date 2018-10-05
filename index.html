@@ -28,15 +28,6 @@
 			<div class="swiper-slide">
 				<div class="banner-list"><a href=""><img src="image/main_banner01.png" alt=""></a></div>
 			</div>
-			<div class="swiper-slide">
-				<div class="banner-list"><a href=""><img src="image/main_banner01.png" alt=""></a></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner-list"><a href=""><img src="image/main_banner01.png" alt=""></a></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="banner-list"><a href=""><img src="image/main_banner01.png" alt=""></a></div>
-			</div>
 		</div>
 		<div class="main-pagination"></div>
 	</div>
@@ -549,13 +540,14 @@
 </div>
 <script>
 var main_swiper01 = new Swiper('.main-banner-container', {
-	slidesPerView: 'auto',
 	spaceBetween: 0,
 	pagination: {
 		el: '.main-pagination',
 		clickable: true,
 	  },
 });
+if(main_swiper01.slides.length == 1) $('.main-pagination').hide();
+    
 function appdownload_show() {
 	$('.modal-appdownload').show().animate({
 		opacity: "1",
