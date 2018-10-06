@@ -1160,7 +1160,9 @@ hr.main {
 #app-download .app-logo {
   width: 150px;
   height: 150px;
-  background-image: url(../image/mobil_icon.png);
+  background-image: url(../image/sssd_app_logo.svg);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
   display: block;
   position: absolute;
   top: 80px;
@@ -1281,6 +1283,14 @@ hr.main {
   font-size: 12px;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .store-download .googleplay {
+    background-image: url(../image/btn_googleplay@2x.png) !important;
+  }
+  .store-download .appstore {
+    background-image: url(../image/btn_appstore@2x.png) !important;
+  }
+}
 .list-box {
   padding: 30px 0;
 }
@@ -2693,6 +2703,14 @@ span.badge.badge-white {
   background-repeat: no-repeat;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .appdownload-btn .googleplay {
+    background-image: url(../image/btn_googleplay_gray@2x.png) !important;
+  }
+  .appdownload-btn .appstore {
+    background-image: url(../image/btn_appstore_gray@2x.png) !important;
+  }
+}
 #sub-wrapper .contents {
   padding-top: 30px;
 }

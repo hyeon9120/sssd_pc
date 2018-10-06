@@ -1,3 +1,7 @@
+#update 10.07
+- footer 로고, 앱스토어 연결 버튼 image @2x 대응
+- 다운로드 modal 앱스토어 연결 버튼 image @2x 대응
+
 #update 10.04
 - sub.html :: 갤러리 재오픈시 인터랙션 오류 수정(좌우이동문)
 - sub.html :: 갤러리 사진보기 사이즈 조정 (ie css호환성 문제로 img -> background로 이동)

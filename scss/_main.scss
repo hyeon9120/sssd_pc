@@ -341,7 +341,9 @@ hr.main {
 	.app-logo {
 		width:150px;
 		height:150px;
-		background-image:url(../image/mobil_icon.png);
+		background-image:url(../image/sssd_app_logo.svg);
+		background-size:150px 150px;
+		background-repeat:no-repeat;
 		display:block;
 		position:absolute;
 		top:80px;
@@ -459,5 +461,15 @@ hr.main {
 		bottom:38px;
 		color:#9ea4ac;
 		font-size:12px;
+	}
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	.store-download {
+		.googleplay {
+			background-image:url(../image/btn_googleplay@2x.png) !important;
+		}
+		.appstore {
+			background-image:url(../image/btn_appstore@2x.png) !important;
+		}
 	}
 }

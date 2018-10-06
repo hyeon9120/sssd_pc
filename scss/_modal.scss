@@ -191,3 +191,13 @@
 		}
 	}
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	.appdownload-btn {
+		.googleplay {
+			background-image:url(../image/btn_googleplay_gray@2x.png) !important;
+		}
+		.appstore {
+			background-image:url(../image/btn_appstore_gray@2x.png) !important;
+		}
+	}
+}
