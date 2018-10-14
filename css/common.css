@@ -1228,13 +1228,14 @@ hr.main {
   text-indent: -3000em;
   width: 200px;
   height: 64px;
+  background-size: 200px 64px;
 }
 #app-download .store-download a.googleplay {
-  background-image: url(../image/btn_googleplay.png);
+  background-image: url(../image/btn_googleplay@2x.png);
 }
 #app-download .store-download a.appstore {
   margin-top: 12px;
-  background-image: url(../image/btn_appstore.png);
+  background-image: url(../image/btn_appstore@2x.png);
 }
 
 #footer {
@@ -2608,6 +2609,7 @@ span.badge.badge-white {
   text-indent: -3000em;
   width: 230px;
   height: 70px;
+  background-size: 230px 70px;
   float: left;
 }
 .modal-appdownload .appdownload-btn a.googleplay {

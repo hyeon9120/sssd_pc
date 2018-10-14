@@ -1,3 +1,6 @@
+#update 10.14
+- footer 앱스토어 연결 이미지 오류 수정
+
 #update 10.07
 - footer 로고, 앱스토어 연결 버튼 image @2x 대응
 - 다운로드 modal 앱스토어 연결 버튼 image @2x 대응
